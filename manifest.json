@@ -1,0 +1,44 @@
+{
+  "name": "payment-provider-whola",
+  "vendor": "whola",
+  "version": "0.0.1",
+  "title": "Stripe FW",
+  "description": "Reference app for Payment-Provider protocol implementers (for whola vendor)",
+  "builders": {
+    "paymentProvider": "1.x",
+    "node": "6.x",
+    "react": "2.x",
+    "pages": "0.x",
+    "messages": "0.x",
+    "docs": "0.x"
+  },
+  "policies": [
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "ViewPayments"
+    },
+    {
+      "name": "MakePayments"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "heimdall.vtexpayments.com.br",
+        "path": "/api/payment-provider/callback/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "{{account}}.vtexpayments.com.br",
+        "path": "/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
