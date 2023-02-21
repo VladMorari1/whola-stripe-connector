@@ -1,7 +1,7 @@
 {
   "name": "payment-provider-whola",
   "vendor": "whola",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "title": "Stripe FW",
   "description": "Reference app for Payment-Provider protocol implementers (for whola vendor)",
   "builders": {
@@ -11,6 +11,16 @@
     "pages": "0.x",
     "messages": "0.x",
     "docs": "0.x"
+  },
+  "billingOptions": {
+    "support": {
+      "email": "leon.thor@vtex.com.br",
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "type": "free",
+    "availableCountries": [
+      "*"
+    ]
   },
   "policies": [
     {
