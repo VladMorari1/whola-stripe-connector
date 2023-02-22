@@ -35,7 +35,7 @@ class ExampleTransactionAuthApp extends Component {
       timeout: 5000,
     })
     try {
-      const response = await inboundAPI.post('/_v/whola.payment-provider-whola/v0/v1/cancelPayment',
+      const response = await inboundAPI.post('/_v/whola.payment-provider-whola/v0/cancelPayment',
         {
           paymentId,
           status: "denied",
@@ -71,7 +71,7 @@ class ExampleTransactionAuthApp extends Component {
       timeout: 5000,
     })
     try {
-      const response = await inboundAPI.post('/_v/whola.payment-provider-whola/v0/v1/paymentapp',
+      const response = await inboundAPI.post('/_v/whola.payment-provider-whola/v0/paymentapp',
         {
           inboundRequestsUrl: parsedPayload.inboundRequestsUrl
         });

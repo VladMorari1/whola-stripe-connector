@@ -1,9 +1,5 @@
 {
   "name": "WholaFwConnector",
-  "serviceUrl": "/_v/api/payment-provider-whola",
-  "implementsSplit": true,
-  "usesAutoSettleOptions": true,
-  "acceptSplitPartialRefund": true,
   "paymentMethods": [
     {
       "name": "Visa",
